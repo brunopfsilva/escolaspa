@@ -5,3 +5,9 @@
   .mat-toolbar-single-row span {
     padding-left: 33px;
 }  
+
+
+.mat-elevation-z8 {
+  padding: 18px;
+  margin: 18px;
+}

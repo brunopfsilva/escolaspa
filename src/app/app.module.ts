@@ -10,22 +10,28 @@ import { AlunosComponent } from './alunos/alunos.component';
 
 //material 
 
-import {MatIconModule} from '@angular/material/icon';
-import {MatToolbarModule} from '@angular/material/toolbar'; 
+import { MatIconModule } from '@angular/material/icon';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTableModule } from '@angular/material/table';
+import { Erro404Component } from './erro404/erro404.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProfessoresComponent,
-    AlunosComponent
+    AlunosComponent,
+    Erro404Component,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTableModule
 
   ],
   providers: [],

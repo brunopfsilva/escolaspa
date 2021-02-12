@@ -1,0 +1,18 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-toolbar-single-row span {
+    padding-left: 33px;
+}  
+
+
+.mat-elevation-z8 {
+  padding: 18px;
+  margin: 18px;
+}
+
+.homeLink {
+    text-decoration: none;
+    color: #fff;
+}
