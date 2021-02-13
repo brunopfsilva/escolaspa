@@ -11,17 +11,22 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Sistema escola';
   
-  showProgress = false;
+  showprogress:boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
-
-    this.showProgress = true;
+   this.showprogress = false;
   }
+  
+
+  showProgress() {
+    this.showprogress = false;
+  }
+ 
 
   ngOnDestroy(): void {
-    this.showProgress = false;
+    this.showprogress = false;
   }
 
 }
