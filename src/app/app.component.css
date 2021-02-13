@@ -6,13 +6,27 @@
     padding-left: 33px;
 }  
 
+.loading {
+  color: purple;
+  align-items: center;
+}
 
 .mat-elevation-z8 {
   padding: 18px;
   margin: 18px;
 }
 
+.container {
+  max-width: 720px;
+  margin: auto;
+}
+
+
 .homeLink {
     text-decoration: none;
     color: #fff;
 }
+
+table {
+  width: 100%;
+} 

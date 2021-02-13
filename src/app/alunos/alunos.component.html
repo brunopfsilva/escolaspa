@@ -1,13 +1,20 @@
 <br>
-<h1>Lista de alunos</h1>
-  <table class="mat-elevation-z8">
+<h2>Lista de alunos <button (click)="showTable()" mat-button color="primary">Exibir </button>
+</h2>
+<br>
+  <table *ngIf="showtable" class="mat-elevation-z8">
 
-  
-    <!-- Name Column -->
-    <ng-container matColumnDef="name">
-      <th > Name </th>
-      <td > </td>
-    </ng-container>
-    <tr></tr>
+    <tr>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>E-mail</th>
+      <th>Curso</th>
+    </tr>
+    <tr *ngFor="let aluno of listAlunos" >
+      <td >{{aluno.nome}}</td>
+      <td>{{aluno.idade}}</td>
+      <td>{{aluno.email}}</td>
+      <td>{{aluno.curso}}</td>
+    </tr>
   </table>
   

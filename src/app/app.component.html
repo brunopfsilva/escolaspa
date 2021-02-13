@@ -15,8 +15,15 @@
           <mat-icon>share</mat-icon>
         </button>
       </mat-toolbar>
+        <mat-spinner *ngIf="showProgress"
+        class="loading">
+        </mat-spinner>
+        <div class="container">
+            <router-outlet>
 
-      <router-outlet></router-outlet>
+            </router-outlet>
+        </div>
+
 
 
 </body>
